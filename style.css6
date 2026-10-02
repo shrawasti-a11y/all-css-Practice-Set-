@@ -1,0 +1,58 @@
+.box {
+  width: 120px;
+  height: 120px;
+  color: white;
+}
+
+/* Q1: relative position, shifted 20px from top and left */
+#box {
+  background: blue;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+/* Q2: parent is relative, second child is absolute */
+.parent {
+  position: relative;
+  width: 300px;
+  height: 190px;
+  border: 2px solid black;
+  margin-top: 40px;
+}
+
+.first {
+  background: blue;
+}
+
+.second {
+  background: orange;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+/* Q3: both children are positioned, so z-index works */
+.parent2 {
+  position: relative;
+  width: 300px;
+  height: 190px;
+  border: 2px solid black;
+  margin-top: 40px;
+}
+
+.third {
+  background: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.fourth {
+  background: orange;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  z-index: 1;
+}

@@ -1,0 +1,21 @@
+/* Step 1: circle with a thick border that differs on one side */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 10px solid lightgray;
+  border-top: 10px solid blue;   /* the coloured end that makes the spin visible */
+  border-radius: 50%;            /* makes it a circle */
+
+  /* Step 3: attach the animation and repeat it forever */
+  animation: spin 1s linear infinite;
+}
+
+/* Step 2: rotate from 0deg to 360deg */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
